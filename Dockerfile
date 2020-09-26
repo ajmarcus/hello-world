@@ -1,9 +1,9 @@
 # Comments in Dockerfiles
-FROM python:3.5
+FROM python:3.7
 
 # Update and install dependencies
 RUN apt-get update
-RUN pip install Flask
+RUN pip install flask
 
 # Add code
 ADD . /opt/webapp/
