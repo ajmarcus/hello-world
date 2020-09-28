@@ -15,7 +15,7 @@ WORKDIR /opt/webapp
 ENV FLASK_APP=app.py
 
 # Expose the application's port
-EXPOSE 5000
+EXPOSE :$PORT
 
 # Run the application
 CMD ["flask", "run", "--host=0.0.0.0"]
